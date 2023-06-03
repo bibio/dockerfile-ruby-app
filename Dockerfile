@@ -1,7 +1,7 @@
 FROM ruby:3.2.2-slim
 
 RUN apt update -qq && \
-    apt install -y build-essential libpq-dev git jq curl && \
+    apt install -y build-essential libpq-dev git jq curl libmariadb-dev && \
     curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt update -qq && \
     apt install -y nodejs && \
