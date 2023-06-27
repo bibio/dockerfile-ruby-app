@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: login build setup
 login:
 	. .env && echo $${DOCKERHUB_TOKEN} | docker login -u $${DOCKERHUB_USER} --password-stdin
 build: 
